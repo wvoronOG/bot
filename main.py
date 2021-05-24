@@ -14,7 +14,7 @@ def welcome(message):
 # keyboard
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     item1 = types.KeyboardButton("Я знаю что я хочу")
-#bot.send_message(message.chat.id,message.text)
+    bot.send_message(message.chat.id,'в разработке')
 
 
     item2 = types.KeyboardButton("Я не знаю что я хочу")

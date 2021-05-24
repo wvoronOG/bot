@@ -3,9 +3,9 @@ import sqlite3
 with sqlite3.connect('bd/database.db') as hot:
 
     cursor = hot.cursor()
-    query = """CREATE TABLE IF NOT EXISTS cookbd (ID,cook,dish,'qq',url)"""
+    query = """CREATE TABLE IF NOT EXISTS cookbd (ID,cook,dish,url)"""
     cursor.execute(query)
-    chiken = """INSERT INTO cookbd ('ID','cook','dish','qq','url') VALUES ('113','Рецепт курицы в сковороде','ингридиенты:1 кг курицы,200 грамм сметаны,3 больших луковицы,300 мл горячей воды,специи,соль,перец','сковородка','видео готовки:https://www.youtube.com/watch?v=K48subsADYU')"""
+    chiken = """INSERT INTO cookbd ('ID','cook','dish','url') VALUES ('113','Рецепт курицы в сковороде','ингридиенты:1 кг курицы,200 грамм сметаны,3 больших луковицы,300 мл горячей воды,специи,соль,перец','видео готовки:https://www.youtube.com/watch?v=K48subsADYU')"""
     cursor.execute(chiken)
     chiken2 = """INSERT INTO cookbd ('ID','cook','dish','url') VALUES ('112','Рецепт курицы в духовке','ингридиенты:Куриная тушка,молотая паприка,Базилик,Оливковое масло,cоль и перец','https://www.youtube.com/watch?v=x0wVay7JGjY')"""
     cursor.execute(chiken2)
